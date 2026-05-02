@@ -1,0 +1,10 @@
+# pretrained weights
+*.pt
+
+# reference notebook
+attention_solution.ipynb
+
+# python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
