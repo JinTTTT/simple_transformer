@@ -1,0 +1,101 @@
+sentence,label
+"I love this movie!",1
+"This film was absolutely fantastic.",1
+"One of the best movies I have ever seen.",1
+"The acting was wonderful and heartfelt.",1
+"A beautiful and moving story.",1
+"I really enjoyed every minute of it.",1
+"Brilliant direction and great performances.",1
+"An instant classic. Loved it.",1
+"The characters felt real and deeply human.",1
+"I was on the edge of my seat the whole time.",1
+"Stunning visuals and an amazing soundtrack.",1
+"I laughed, I cried, I loved every second.",1
+"A masterpiece. Highly recommended.",1
+"The plot was gripping from start to finish.",1
+"Best film I have seen this year.",1
+"Surprisingly good. I did not expect to enjoy it so much.",1
+"The director did an incredible job.",1
+"Perfect casting. Every actor nailed their role.",1
+"I would watch this again in a heartbeat.",1
+"A feel-good movie that left me smiling.",1
+"Genuinely one of the most touching films I have seen.",1
+"I was completely hooked from the very first scene.",1
+"Funny, smart, and wonderfully acted.",1
+"This movie made me feel all kinds of emotions.",1
+"A rare gem. Absolutely loved it.",1
+"The ending was perfect. Could not have asked for more.",1
+"So well written. Every line felt meaningful.",1
+"The chemistry between the actors was electric.",1
+"I have recommended this to everyone I know.",1
+"Walked out of the cinema with a huge smile.",1
+"Easily one of the most enjoyable films in years.",1
+"The pacing was perfect and the story never dragged.",1
+"Emotional, funny, and deeply satisfying.",1
+"One of those films you think about for days.",1
+"I went in with low expectations and was blown away.",1
+"Incredible performances across the board.",1
+"A joy to watch from beginning to end.",1
+"This is exactly the kind of movie I needed.",1
+"Sharp writing and a compelling story.",1
+"The best film I have seen in a long time.",1
+"Moving, funny, and beautifully made.",1
+"Every scene was crafted with care and intention.",1
+"I did not want it to end.",1
+"Absolutely riveting from start to finish.",1
+"A triumph of storytelling and performance.",1
+"Felt like a real story about real people.",1
+"The score alone made me emotional.",1
+"One of those rare films that gets everything right.",1
+"I was smiling for hours after watching it.",1
+"Remarkable. A film I will never forget.",1
+"I hated this movie.",0
+"Terrible acting and a boring plot.",0
+"One of the worst films I have ever seen.",0
+"Complete waste of time.",0
+"Awful. I walked out after 20 minutes.",0
+"The story made no sense whatsoever.",0
+"Dull, slow, and painfully boring.",0
+"I want my money back.",0
+"The dialogue was cringeworthy and embarrassing.",0
+"Nothing about this film worked.",0
+"I fell asleep halfway through.",0
+"The worst movie of the decade.",0
+"Predictable, lazy, and uninspired.",0
+"A total disappointment from start to finish.",0
+"The acting was wooden and unconvincing.",0
+"I could not wait for it to be over.",0
+"Avoid this film at all costs.",0
+"Poorly written and badly directed.",0
+"A mess of a movie with no clear story.",0
+"Genuinely one of the most boring films ever made.",0
+"This movie is an insult to the audience.",0
+"Flat characters and a nonsensical plot.",0
+"I have never been so bored in a cinema.",0
+"The script felt like it was written in an afternoon.",0
+"Absolutely dreadful from start to finish.",0
+"I do not understand how this got made.",0
+"The longest two hours of my life.",0
+"Zero tension, zero emotion, zero point.",0
+"A painfully amateurish effort.",0
+"I turned it off after thirty minutes.",0
+"The worst script I have ever encountered.",0
+"Not a single likeable character in the whole film.",0
+"Utterly forgettable and deeply unpleasant.",0
+"I genuinely cannot think of anything good to say.",0
+"A catastrophic failure on every level.",0
+"The plot holes were so large you could drive a truck through them.",0
+"Made me angry that I spent money on a ticket.",0
+"Embarrassingly bad. I felt sorry for the actors.",0
+"The pacing was so slow I lost the will to live.",0
+"Dreadful. A film that should never have been made.",0
+"Cheap, lazy, and deeply unsatisfying.",0
+"I have seen student films with more heart than this.",0
+"A pointless film that goes absolutely nowhere.",0
+"The most tedious cinema experience I have ever had.",0
+"Every scene dragged on far too long.",0
+"No chemistry, no tension, no reason to care.",0
+"A massive disappointment after all the hype.",0
+"I cannot believe how badly this turned out.",0
+"The ending made absolutely no sense.",0
+"Just awful. Avoid at all costs.",0
