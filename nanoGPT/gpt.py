@@ -1,17 +1,20 @@
 import torch
 import torch.nn as nn
 from torch.nn import functional as F
+import time
 
 # hyperparameters
-batch_size = 16 # how many independent sequences will we process in parallel?
-block_size = 64 # what is the maximum context length for predictions?
+# takes 6 min on a 4060 GPU, final val loss is 1.49
+batch_size = 32 # how many independent sequences will we process in parallel?
+block_size = 128 # what is the maximum context length for predictions?
 max_iters = 5000
 eval_interval = 500
 learning_rate = 3e-4
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
+print(f"Using device: {device}")
 eval_iters = 200
-n_embd = 128
-n_head = 4 # each heads has 64/4 = 16 dims
+n_embd = 384
+n_head = 6 # each heads has 384/6 = 64 dims
 n_layer = 6 # 6 layers, each layer has 6 heads, bet each layer use ffd to increase dim 4 times then project back, then to another layer
 dropout = 0.2
 # ------------
@@ -203,6 +206,8 @@ print(sum(p.numel() for p in m.parameters())/1e6, 'M parameters')
 # create a PyTorch optimizer
 optimizer = torch.optim.AdamW(model.parameters(), lr=learning_rate)
 
+train_start_time = time.perf_counter()
+
 for iter in range(max_iters):
 
     # every once in a while evaluate the loss on train and val sets
@@ -218,6 +223,14 @@ for iter in range(max_iters):
     optimizer.zero_grad(set_to_none=True)
     loss.backward()
     optimizer.step()
+
+if device == 'cuda':
+    torch.cuda.synchronize()
+
+train_time = time.perf_counter() - train_start_time
+tokens_per_iter = batch_size * block_size
+print(f"training time: {train_time:.2f} seconds ({train_time / 60:.2f} minutes)")
+print(f"speed: {max_iters / train_time:.2f} iterations/sec, {max_iters * tokens_per_iter / train_time:.0f} tokens/sec")
 
 # generate from the model
 context = torch.zeros((1, 1), dtype=torch.long, device=device) # from with a empty token
